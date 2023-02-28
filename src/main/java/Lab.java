@@ -20,7 +20,10 @@ public class Lab {
      *
      * Check out this guide on throwing exceptions: https://rollbar.com/guides/java/how-to-throw-exceptions-in-java/#
      */
-    public void mustThrow() {
+    public void mustThrow() throws Exception  {
+        int  a=10, b=1;
 
+        int c = a/b;
+        throw new ArithmeticException("Error: Division by zero. Charot!");
     }
 }
